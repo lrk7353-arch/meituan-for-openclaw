@@ -12,6 +12,7 @@
             <router-link to="/">首页</router-link>
             <router-link to="/map">地图</router-link>
             <router-link to="/favorites">我的收藏</router-link>
+            <router-link to="/profile">个人中心</router-link>
           </nav>
         </div>
       </el-header>

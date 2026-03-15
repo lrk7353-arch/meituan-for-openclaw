@@ -49,7 +49,12 @@
             <el-button type="primary" class="meituan-btn" @click="handleSearch">搜索</el-button>
           </el-form-item>
           <el-form-item>
-            <el-button plain class="recommend-btn" @click="goToModeSelect">不想选了，智能推荐</el-button>
+            <el-tooltip content="选择困难？不妨试试！" placement="top" effect="light">
+              <el-button class="recommend-btn" @click="goToModeSelect">
+                <el-icon class="el-icon--left"><MagicStick /></el-icon>
+                不想选了，智能推荐
+              </el-button>
+            </el-tooltip>
           </el-form-item>
         </el-form>
       </el-card>
@@ -136,7 +141,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useRouter } from 'vue-router';
-import { Search, Location, Star, StarFilled } from '@element-plus/icons-vue';
+import { Search, Location, Star, StarFilled, MagicStick } from '@element-plus/icons-vue';
 import { ElMessage } from 'element-plus';
 import { getRestaurants, searchRestaurants } from '../api/restaurant';
 import { useRestaurantStore } from '../stores/restaurant';
@@ -477,15 +482,28 @@ onUnmounted(() => {
 }
 
 .recommend-btn {
-  color: #555;
-  border-color: #e4e7ed;
-  font-weight: 500;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%);
+  border: none;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  animation: pulse 2s infinite;
 }
 
 .recommend-btn:hover {
-  color: #FFC300;
-  border-color: #FFC300;
-  background-color: #fffcf5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 71, 87, 0.4);
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b6b 100%);
+  color: white;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
 }
 
 .content-section {
