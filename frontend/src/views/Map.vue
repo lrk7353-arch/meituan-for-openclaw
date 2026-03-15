@@ -4,16 +4,16 @@
     <div class="top-bar">
       <div class="mode-selector">
         <el-radio-group v-model="restaurantStore.selectMode" size="small" @change="onModeChange">
-          <el-radio-button label="health">🥗 控制热量</el-radio-button>
-          <el-radio-button label="budget">💰 控制预算</el-radio-button>
-          <el-radio-button label="random">🎲 随意</el-radio-button>
+          <el-radio-button value="health">🥗 控制热量</el-radio-button>
+          <el-radio-button value="budget">💰 控制预算</el-radio-button>
+          <el-radio-button value="random">🎲 随意</el-radio-button>
         </el-radio-group>
       </div>
 
       <div class="dining-type-selector">
         <el-radio-group v-model="restaurantStore.diningType" size="small" @change="onDiningTypeChange">
-          <el-radio-button label="dine-in">🏪 到店吃</el-radio-button>
-          <el-radio-button label="delivery">🛵 外卖</el-radio-button>
+          <el-radio-button value="dine-in">🏪 到店吃</el-radio-button>
+          <el-radio-button value="delivery">🛵 外卖</el-radio-button>
         </el-radio-group>
       </div>
       <div class="campus-selector">
@@ -232,7 +232,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue';
+import { ref, computed, onMounted, watch, nextTick, onUnmounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { Close, Loading } from '@element-plus/icons-vue';
 import { ElMessage } from 'element-plus';
@@ -461,7 +461,7 @@ const centerOnCurrentRestaurant = () => {
 };
 
 // 初始化地图
-const initMap = () => {
+const initMap = async () => {
   if (!AMAP_KEY) {
     mapError.value = true;
     ElMessage.error('缺少地图 Key，请在 .env 中配置 VITE_AMAP_KEY');
@@ -469,6 +469,7 @@ const initMap = () => {
   }
 
   mapLoading.value = true;
+  await nextTick(); // 等待 DOM 更新
 
   if (typeof window.AMap === 'undefined') {
     const script = document.createElement('script');
@@ -497,19 +498,28 @@ const initMap = () => {
 };
 
 // 创建地图
-const createMap = () => {
+const createMap = async () => {
   if (typeof window.AMap === 'undefined') {
     console.error('AMap 未定义');
     mapError.value = true;
     return;
   }
 
+  await nextTick(); // 再次确保 DOM 更新
+
   try {
     const container = document.getElementById('map-container');
     if (!container) {
-      console.error('地图容器不存在');
-      mapError.value = true;
+      console.error('地图容器不存在，尝试重新获取...');
+      // 简单的重试机制
+      setTimeout(createMap, 500);
       return;
+    }
+
+    // 销毁旧实例（如果存在）
+    if (map.value) {
+      map.value.destroy();
+      map.value = null;
     }
 
     map.value = new window.AMap.Map('map-container', {
@@ -535,9 +545,19 @@ const createMap = () => {
     console.error('创建地图失败:', error);
     mapLoading.value = false;
     mapError.value = true;
-    ElMessage.error('地图初始化失败: ' + error.message);
+    // 只有非容器错误才显示 Toast，避免打扰用户
+    if (!error.message.includes('Map container')) {
+      ElMessage.error('地图初始化失败: ' + error.message);
+    }
   }
 };
+
+onUnmounted(() => {
+  if (map.value) {
+    map.value.destroy();
+    map.value = null;
+  }
+});
 
 // 添加餐厅标记
 const addMarkers = () => {
