@@ -1,0 +1,294 @@
+[
+  {
+    "id": "1",
+    "name": "清华园烤肉",
+    "cuisine": "火锅烧烤",
+    "address": "海淀区成府路35号",
+    "phone": "010-62780001",
+    "businessHours": "11:00-23:00",
+    "priceLevel": 3,
+    "avgPrice": 68,
+    "rating": 4.6,
+    "reviewCount": 238,
+    "location": {
+      "lng": 116.3265,
+      "lat": 39.9928
+    },
+    "tags": ["学生优惠", "套餐划算", "聚餐首选"],
+    "images": [
+      "https://picsum.photos/400/300?random=1",
+      "https://picsum.photos/400/300?random=2"
+    ],
+    "recommendedDishes": [
+      {"name": "精品羊肉", "price": 38},
+      {"name": "烤鸡翅", "price": 16}
+    ]
+  },
+  {
+    "id": "2",
+    "name": "北大西门小馆",
+    "cuisine": "中餐",
+    "address": "海淀区颐和园路5号",
+    "phone": "010-62750002",
+    "businessHours": "10:30-21:30",
+    "priceLevel": 2,
+    "avgPrice": 35,
+    "rating": 4.3,
+    "reviewCount": 156,
+    "location": {
+      "lng": 116.3089,
+      "lat": 39.9918
+    },
+    "tags": ["家常菜", "实惠", "外卖配送"],
+    "images": [
+      "https://picsum.photos/400/300?random=3"
+    ],
+    "recommendedDishes": [
+      {"name": "红烧肉", "price": 32},
+      {"name": "麻婆豆腐", "price": 18}
+    ]
+  },
+  {
+    "id": "3",
+    "name": "人大南门日料",
+    "cuisine": "日韩料理",
+    "address": "海淀区中关村大街59号",
+    "phone": "010-82500003",
+    "businessHours": "11:00-14:00,17:00-22:00",
+    "priceLevel": 3,
+    "avgPrice": 58,
+    "rating": 4.7,
+    "reviewCount": 312,
+    "location": {
+      "lng": 116.3056,
+      "lat": 39.9822
+    },
+    "tags": ["寿司", "刺身", "环境好"],
+    "images": [
+      "https://picsum.photos/400/300?random=4",
+      "https://picsum.photos/400/300?random=5"
+    ],
+    "recommendedDishes": [
+      {"name": "三文鱼刺身", "price": 48},
+      {"name": "寿司拼盘", "price": 68}
+    ]
+  },
+  {
+    "id": "4",
+    "name": "五道口奶茶站",
+    "cuisine": "奶茶甜点",
+    "address": "海淀区成府路20号",
+    "phone": "010-82820004",
+    "businessHours": "09:00-23:00",
+    "priceLevel": 1,
+    "avgPrice": 18,
+    "rating": 4.4,
+    "reviewCount": 523,
+    "location": {
+      "lng": 116.3215,
+      "lat": 39.9935
+    },
+    "tags": ["奶茶", "甜品", "外卖快"],
+    "images": [
+      "https://picsum.photos/400/300?random=6"
+    ],
+    "recommendedDishes": [
+      {"name": "珍珠奶茶", "price": 15},
+      {"name": "芋圆奶茶", "price": 18}
+    ]
+  },
+  {
+    "id": "5",
+    "name": "学院路麻辣香锅",
+    "cuisine": "火锅烧烤",
+    "address": "海淀区学院路15号",
+    "phone": "010-82320005",
+    "businessHours": "11:00-22:00",
+    "priceLevel": 2,
+    "avgPrice": 42,
+    "rating": 4.5,
+    "reviewCount": 189,
+    "location": {
+      "lng": 116.3478,
+      "lat": 39.9856
+    },
+    "tags": ["麻辣香锅", "自选食材", "量大"],
+    "images": [
+      "https://picsum.photos/400/300?random=7"
+    ],
+    "recommendedDishes": [
+      {"name": "荤素混搭", "price": 45},
+      {"name": "全素香锅", "price": 32}
+    ]
+  },
+  {
+    "id": "6",
+    "name": "知春路西餐厅",
+    "cuisine": "西餐",
+    "address": "海淀区知春路28号",
+    "phone": "010-82830006",
+    "businessHours": "11:30-21:30",
+    "priceLevel": 4,
+    "avgPrice": 95,
+    "rating": 4.8,
+    "reviewCount": 98,
+    "location": {
+      "lng": 116.3189,
+      "lat": 39.9789
+    },
+    "tags": ["牛排", "约会", "环境优雅"],
+    "images": [
+      "https://picsum.photos/400/300?random=8",
+      "https://picsum.photos/400/300?random=9"
+    ],
+    "recommendedDishes": [
+      {"name": "澳洲牛排", "price": 128},
+      {"name": "意面套餐", "price": 68}
+    ]
+  },
+  {
+    "id": "7",
+    "name": "北大附近小面馆",
+    "cuisine": "中餐",
+    "address": "海淀区圆明园西路16号",
+    "phone": "010-62810007",
+    "businessHours": "08:00-20:00",
+    "priceLevel": 1,
+    "avgPrice": 22,
+    "rating": 4.2,
+    "reviewCount": 342,
+    "location": {
+      "lng": 116.2967,
+      "lat": 39.9878
+    },
+    "tags": ["快餐", "经济实惠", "早餐"],
+    "images": [
+      "https://picsum.photos/400/300?random=10"
+    ],
+    "recommendedDishes": [
+      {"name": "牛肉面", "price": 18},
+      {"name": "炸酱面", "price": 15}
+    ]
+  },
+  {
+    "id": "8",
+    "name": "五道口炸鸡店",
+    "cuisine": "中餐",
+    "address": "海淀区成府路25号",
+    "phone": "010-82840008",
+    "businessHours": "10:00-23:00",
+    "priceLevel": 1,
+    "avgPrice": 28,
+    "rating": 4.1,
+    "reviewCount": 278,
+    "location": {
+      "lng": 116.3245,
+      "lat": 39.9912
+    },
+    "tags": ["炸鸡", "外卖", "夜宵"],
+    "images": [
+      "https://picsum.photos/400/300?random=11"
+    ],
+    "recommendedDishes": [
+      {"name": "韩式炸鸡", "price": 32},
+      {"name": "鸡米花", "price": 18}
+    ]
+  },
+  {
+    "id": "9",
+    "name": "中关村轻食沙拉",
+    "cuisine": "西餐",
+    "address": "海淀区中关村大街32号",
+    "phone": "010-82550009",
+    "businessHours": "11:00-20:00",
+    "priceLevel": 2,
+    "avgPrice": 38,
+    "rating": 4.5,
+    "reviewCount": 145,
+    "location": {
+      "lng": 116.3123,
+      "lat": 39.9798
+    },
+    "tags": ["健康", "沙拉", "减脂"],
+    "images": [
+      "https://picsum.photos/400/300?random=12"
+    ],
+    "recommendedDishes": [
+      {"name": "牛油果鸡胸沙拉", "price": 35},
+      {"name": "金枪鱼沙拉", "price": 42}
+    ]
+  },
+  {
+    "id": "10",
+    "name": "清华园甜品屋",
+    "cuisine": "奶茶甜点",
+    "address": "海淀区清华东路17号",
+    "phone": "010-62790010",
+    "businessHours": "10:00-22:00",
+    "priceLevel": 2,
+    "avgPrice": 25,
+    "rating": 4.6,
+    "reviewCount": 456,
+    "location": {
+      "lng": 116.3334,
+      "lat": 39.9989
+    },
+    "tags": ["蛋糕", "下午茶", "约会"],
+    "images": [
+      "https://picsum.photos/400/300?random=13",
+      "https://picsum.photos/400/300?random=14"
+    ],
+    "recommendedDishes": [
+      {"name": "草莓千层", "price": 28},
+      {"name": "抹茶提拉米苏", "price": 32}
+    ]
+  },
+  {
+    "id": "11",
+    "name": "人大食堂周边小吃",
+    "cuisine": "中餐",
+    "address": "海淀区中关村大街62号",
+    "phone": "010-82560011",
+    "businessHours": "09:00-21:00",
+    "priceLevel": 1,
+    "avgPrice": 20,
+    "rating": 4.0,
+    "reviewCount": 512,
+    "location": {
+      "lng": 116.3078,
+      "lat": 39.9834
+    },
+    "tags": ["小吃", "便宜", "方便"],
+    "images": [
+      "https://picsum.photos/400/300?random=15"
+    ],
+    "recommendedDishes": [
+      {"name": "煎饼果子", "price": 8},
+      {"name": "肉夹馍", "price": 12}
+    ]
+  },
+  {
+    "id": "12",
+    "name": "学院路韩式烤肉",
+    "cuisine": "日韩料理",
+    "address": "海淀区学院路25号",
+    "phone": "010-82370012",
+    "businessHours": "11:00-23:00",
+    "priceLevel": 3,
+    "avgPrice": 72,
+    "rating": 4.4,
+    "reviewCount": 167,
+    "location": {
+      "lng": 116.3498,
+      "lat": 39.9867
+    },
+    "tags": ["韩式烤肉", "聚会", "配菜多"],
+    "images": [
+      "https://picsum.photos/400/300?random=16"
+    ],
+    "recommendedDishes": [
+      {"name": "五花肉", "price": 45},
+      {"name": "石锅拌饭", "price": 28}
+    ]
+  }
+]

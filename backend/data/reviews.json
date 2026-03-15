@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "restaurantId": "1",
+    "userId": "student001",
+    "userName": "小明同学",
+    "avatar": "https://picsum.photos/100/100?random=100",
+    "rating": 5,
+    "content": "非常棒的烤肉店！肉质新鲜，服务也很到位，和室友聚餐的首选之地。学生套餐特别划算！",
+    "images": ["https://picsum.photos/300/200?random=101"],
+    "likes": 24,
+    "timestamp": "2026-03-10T18:30:00Z"
+  },
+  {
+    "id": "2",
+    "restaurantId": "1",
+    "userId": "student002",
+    "userName": "学霸小姐姐",
+    "avatar": "https://picsum.photos/100/100?random=102",
+    "rating": 4,
+    "content": "味道不错，就是周末人比较多需要排队。建议提前预约。",
+    "images": [],
+    "likes": 12,
+    "timestamp": "2026-03-09T20:15:00Z"
+  },
+  {
+    "id": "3",
+    "restaurantId": "2",
+    "userId": "student003",
+    "userName": "北大吃货",
+    "avatar": "https://picsum.photos/100/100?random=103",
+    "rating": 5,
+    "content": "性价比超高！红烧肉软糯入味，麻婆豆腐也是正宗川味，强烈推荐！",
+    "images": ["https://picsum.photos/300/200?random=104", "https://picsum.photos/300/200?random=105"],
+    "likes": 31,
+    "timestamp": "2026-03-08T19:45:00Z"
+  },
+  {
+    "id": "4",
+    "restaurantId": "3",
+    "userId": "student004",
+    "userName": "日料控",
+    "avatar": "https://picsum.photos/100/100?random=106",
+    "rating": 5,
+    "content": "三文鱼超级新鲜！寿司师傅手艺很好，环境也很干净整洁，适合约会。",
+    "images": ["https://picsum.photos/300/200?random=107"],
+    "likes": 28,
+    "timestamp": "2026-03-11T17:30:00Z"
+  },
+  {
+    "id": "5",
+    "restaurantId": "4",
+    "userId": "student005",
+    "userName": "奶茶续命",
+    "avatar": "https://picsum.photos/100/100?random=108",
+    "rating": 5,
+    "content": "珍珠奶茶yyds！芋圆也超好吃，每天下午必点一杯续命😂",
+    "images": [],
+    "likes": 45,
+    "timestamp": "2026-03-12T15:00:00Z"
+  },
+  {
+    "id": "6",
+    "restaurantId": "5",
+    "userId": "student006",
+    "userName": "麻辣星人",
+    "avatar": "https://picsum.photos/100/100?random=109",
+    "rating": 4,
+    "content": "香锅很香，但是有点辣。不能吃辣的同学记得少放辣椒哦",
+    "images": ["https://picsum.photos/300/200?random=110"],
+    "likes": 19,
+    "timestamp": "2026-03-07T20:30:00Z"
+  },
+  {
+    "id": "7",
+    "restaurantId": "6",
+    "userId": "student007",
+    "userName": "浪漫小王子",
+    "avatar": "https://picsum.photos/100/100?random=111",
+    "rating": 5,
+    "content": "带女朋友来约会，氛围特别好！牛排也很棒，下次还会再来",
+    "images": ["https://picsum.photos/300/200?random=112"],
+    "likes": 33,
+    "timestamp": "2026-03-06T19:00:00Z"
+  },
+  {
+    "id": "8",
+    "restaurantId": "7",
+    "userId": "student008",
+    "userName": "早八人",
+    "avatar": "https://picsum.photos/100/100?random=113",
+    "rating": 4,
+    "content": "早八上完课来吃碗牛肉面，舒服！价格也很实惠",
+    "images": [],
+    "likes": 22,
+    "timestamp": "2026-03-11T08:30:00Z"
+  }
+]
