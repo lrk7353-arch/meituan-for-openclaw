@@ -3,7 +3,7 @@ import { ElMessage } from 'element-plus';
 
 const api = axios.create({
   // 如果有环境变量 VITE_API_URL，就用它；否则默认用 /api (走本地代理)
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: 'https://meituan-for-openclaw.onrender.com',
   timeout: 10000
 });
 
